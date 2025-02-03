@@ -1,0 +1,185 @@
+/* General Styling */
+.about-page {
+    font-family: 'Roboto', sans-serif;  /* Changed to a more modern font */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;  /* Soft background for the page */
+  }
+  
+  .about-header {
+    background-color: #efd7d0;
+    padding: 5px 0;
+    text-align: center;
+    color: rgb(227, 19, 175);
+    font-size: 2.5rem;  /* Increased font size for better readability */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+  }
+  
+  .about-header nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    list-style-type: none;
+  }
+  
+  .about-header nav ul li {
+    margin: 0 25px;
+  }
+  
+  .about-header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;  /* Slightly larger font for better readability */
+    font-weight: 500;  /* Makes the text slightly bolder */
+    transition: all 0.3s ease;  /* Smooth transition for hover effect */
+  }
+  
+  .about-header nav ul li a:hover {
+    text-decoration: underline;
+    transform: scale(1.1);  /* Subtle scaling on hover */
+  }
+  
+  /* Carousel Section */
+  .carousel-section {
+    margin: 60px 0;
+    text-align: center;
+    padding: 0 10px;
+  }
+  
+  .carousel-section h2 {
+    font-size: 2.2rem;
+    color: #0b1ee9;
+    margin-bottom: 30px;
+    font-weight: 600;  /* Bold header for better prominence */
+  }
+  
+  .carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1.4rem;
+    padding: 12px;
+    border-radius: 8px;  /* Rounded corners for the legend */
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;  /* Rounded corners for images */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);  /* Soft shadow for images */
+    transition: transform 0.3s ease;  /* Smooth transition for scaling images */
+  }
+  
+  .carousel img:hover {
+    transform: scale(1.05);  /* Slight zoom-in effect on hover */
+  }
+  
+  /* About Information */
+  .about-info {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);  /* Soft shadow for content blocks */
+    border-radius: 8px;
+    max-width: 900px;
+    margin: 40px auto;
+  }
+  
+  .about-info h2 {
+    font-size: 2.8rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: 600;
+  }
+  
+  .about-info p {
+    font-size: 1.1rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    line-height: 1.8;  /* Increased line height for better readability */
+  }
+  
+  .about-info h3 {
+    font-size: 1.9rem;
+    color: #4CAF50;
+    margin-top: 30px;
+    font-weight: 500;
+  }
+  
+  /* Footer */
+  .about-footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .about-footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .about-footer .footer-content p {
+    margin: 0;
+  }
+  
+  .about-footer .footer-content ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .about-footer .footer-content ul li {
+    margin: 0 15px;
+  }
+  
+  .about-footer .footer-content ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;  /* Slightly larger font */
+    font-weight: 500;  /* Bolder font */
+    transition: color 0.3s ease;  /* Smooth transition on hover */
+  }
+  
+  .about-footer .footer-content ul li a:hover {
+    color: #4CAF50;  /* Color change on hover */
+    text-decoration: underline;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-header nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-footer .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .carousel-section h2 {
+      font-size: 1.8rem;
+    }
+  
+    .about-info h2 {
+      font-size: 2.2rem;
+    }
+  
+    .about-info p {
+      font-size: 1rem;
+    }
+  
+    .about-footer .footer-content ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-footer .footer-content ul li {
+      margin: 10px 0;
+    }
+  }
+  

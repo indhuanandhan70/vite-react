@@ -1,0 +1,103 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  padding-top: 70px; /* Added padding for content to be visible below navbar */
+}
+
+/* Navbar Styling */
+.navbar {
+  background: linear-gradient(135deg, #007bff, #ff6347); /* Gradient from blue to tomato */
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Stronger shadow effect */
+  height: 70px; /* Set a fixed height for the navbar */
+  
+}
+
+/* Navbar Container */
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Navbar Logo */
+.navbar-logo {
+  color: #fff;
+  font-size: 26px;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+/* Navbar Logo Hover Effect */
+.navbar-logo:hover {
+  color: #ffd700; /* Gold color on hover */
+}
+
+/* Navbar Links Container */
+.navbar-links {
+  display: flex;
+  gap: 25px;
+}
+
+/* Navbar Link */
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  transition: color 0.3s ease, transform 0.3s ease, letter-spacing 0.2s ease;
+}
+
+/* Hover Effect on Links */
+.navbar-links a:hover {
+  color: #ffd700; /* Gold color on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+  letter-spacing: 1px;
+}
+
+/* Active Link Styling */
+.navbar-links a.active {
+  color: #ffd700;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  .navbar-links a {
+    font-size: 16px;
+  }
+}
